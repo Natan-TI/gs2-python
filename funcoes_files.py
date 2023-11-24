@@ -51,15 +51,6 @@ def forca_opcao(msg, lista):
     return x
 
 
-def load_data_from_json(file_name):
-    try:
-        with open(file_name, 'r') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        data = {'nome': [], 'convenio': [], 'tempo de espera': [], 'lotacao': [], 'distancia': []}
-    return data
-
-
 def acha_menor(lista):
     menor = lista[0]
     indice = 0
